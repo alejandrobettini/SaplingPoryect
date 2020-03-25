@@ -22,11 +22,44 @@ Given(/^iniciar sesion en Sapling con usuario "(.*)" y contraseña "(.*)"$/, asy
 
 });
 
+When(/^Seleccionar "(.*)" items$/, async function (items) {
+
+    for (var i=1;i<=items;i++){
+
+        await this.driver.wait(until.elementLocated(By.xpath('//tbody/tr['+i+']//span[@class="item-checkbox"]')));
+        let WEcasillero = await this.driver.findElement(By.xpath('//tbody/tr['+i+']//span[@class="item-checkbox"]'));
+        await WEcasillero.click();
+
+    }
+
+});
+
+
 When('Ingresar a raptor item', async function () {
 
     await this.driver.wait(until.elementLocated(By.xpath(WElements.WEraptorItem)));
     let WEraptorItem = await this.driver.findElement(By.xpath(WElements.WEraptorItem));
     await WEraptorItem.click();
+});
+
+Then('Ir a view selected items', async function () {
+   
+    await this.driver.wait(until.elementLocated(By.xpath(WElements.WEviewSelected)));
+    let WEviewSelected = await this.driver.findElement(By.xpath(WElements.WEviewSelected));
+    await WEviewSelected.click();
+
+});
+
+Then(/^Verificar que los "(.*)" items figuren$/, async function (items) {
+
+    for (var i=1;i<=items;i++){
+
+        await this.driver.wait(until.elementLocated(By.xpath('')));
+        let WEcasillero2 = await this.driver.findElement(By.xpath(''));
+      
+
+    }
+
 });
 
 Then('Crear pregunta en SAVI', async function () {

@@ -5,6 +5,7 @@ let WElements = {
     WEcontraseña: '//input[@id="password"]',
     WElogIn: '//input[@id="submitButton"]',
 
+    WEviewSelected: '//li[@class="cdl-tab-disabled"]',
     WEraptorItem: '//a[@title="create new raptor item"]',
 
     WEadd:"//h2[@data-test-id='PRIMARY ADD MODULE']",
