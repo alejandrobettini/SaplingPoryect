@@ -5,10 +5,10 @@ let WElements = {
     WEcontraseña: '//input[@id="password"]',
     WElogIn: '//input[@id="submitButton"]',
 
-    WEraptorItem: '//a[.="Raptor Item"]',
+    WEraptorItem: '//a[@title="create new raptor item"]',
 
-    WEadd:'//div[@id="primary-menu-buttons"]',
-    WEsavi: '//li[@id="module-palette-savi"]',  //revisar porque aparecen 2 
+    WEadd:"//h2[@data-test-id='PRIMARY ADD MODULE']",
+    WEsavi: '//div[@id="module-palette"]//div[.="SAVI"]',
     WEblanco: '//article[@class="module-container question focused-module"]',
 
     WEmore: '//h2[@data-test-id="PRIMARY MORE"',
