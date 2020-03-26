@@ -6,7 +6,7 @@ Feature: pruebas en AMS
     Scenario: seleccion de 3 items
         When Seleccionar "3" items
         Then Ir a view selected items
-        And Verificar que los "3" items figures
+        And Verificar que los "3" items figuren
     
     Scenario: crear pregunta SAVI
         When Ingresar a raptor item

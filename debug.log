@@ -10,3 +10,10 @@
 [0325/181341.622:ERROR:process_reader_win.cc(151)] SuspendThread: Acceso denegado. (0x5)
 [0325/181341.622:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso. (0xc0000022)
 [0325/181341.622:ERROR:exception_snapshot_win.cc(98)] thread ID 6076 not found in process
+[0326/180559.694:ERROR:process_reader_win.cc(151)] SuspendThread: Acceso denegado. (0x5)
+[0326/180559.753:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso. (0xc0000022)
+[0326/180559.792:ERROR:exception_snapshot_win.cc(98)] thread ID 4776 not found in process
+[0326/180559.787:ERROR:process_reader_win.cc(123)] NtOpenThread: Se ha especificado un identificador de cliente no válido. (0xc000000b)
+[0326/180559.792:ERROR:exception_snapshot_win.cc(98)] thread ID 5460 not found in process
+[0326/180559.792:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Se intentó obtener acceso a un proceso que está cerrándose. (0xc000010a)
+[0326/180559.792:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Se intentó obtener acceso a un proceso que está cerrándose. (0xc000010a)
